@@ -1,0 +1,37 @@
+print("Hello  world")
+
+name = "mustafa"
+age = 46
+email = "Mustafa@hotmail.com"
+print(name.title())
+print(email.lower())
+name = 67
+print (name)
+name1 = "My father\"s name is M.Taqi"
+print(name1.lower())
+print(name1.upper())
+name0 = "Mustafa"
+name2 = "Ali"
+name3 = "Mir"
+fullName = name2 + name3
+fullName1 = name0 + " " + name2 + " " + name3
+print(fullName)
+print(fullName1)
+fullName2 = name0 + " " + name2 + " " + name3 + str(age)
+print(fullName2)
+print("Hello! " + fullName1)
+Languages = "Lan\npython\nhi"
+print(Languages)
+name4 = "   Hello   Mustafa     "
+print(name4.strip().title())
+num1 = 30
+num2 = 5
+print(num1 + num2)
+print(num1 ** num2)
+print(num1 // num2)
+num4 = 5 - 3 * 2 + 2 / 2
+print(num4)
+num5 = 0.1
+num6 = 0.2
+print(num5 + num6)
+print#num3
