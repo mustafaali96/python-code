@@ -1,0 +1,54 @@
+bicycles = [ 'trek' , 'cannondale' , 'redline' , 'specialized' ]
+print(bicycles)
+print(bicycles[0])
+singlebicycle = bicycles[2]
+print(singlebicycle.upper())
+print(bicycles)
+print(bicycles[-1])
+print(bicycles[-3])
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+motorcycles[0] = 'superpower'
+print(motorcycles)
+motorcycles.append('ducati')
+print(motorcycles)
+motorcycles.insert(2, 'unique')
+print(motorcycles)
+motorcycles.insert(-2, 'hero')
+print(motorcycles)
+del motorcycles [1]
+print(motorcycles)
+
+popped_motorcycle = motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycle)
+
+motorcycles.remove('hero')
+print(motorcycles)
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars)
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print("Here is the original list:")
+print(cars)
+print("\nHere is the sorted list:")
+print(sorted(cars))
+print("\nHere is the original list again:")
+print(cars)
+
+print(cars)
+cars.reverse()
+print(cars)
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+twoCars = cars[0] + " " +cars[2]
+print(twoCars)
+
+count = len(cars)
+print(count)
+print(cars[-1])

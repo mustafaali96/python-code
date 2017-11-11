@@ -1,0 +1,46 @@
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+for car in cars:
+    if car == 'bmw':
+        print(car.upper())
+    else:
+        print(car.title())
+print("---")
+
+marks = 75
+if marks > 80:
+    print("A+")
+elif marks > 70:
+    print("A")
+elif marks > 60:
+    print("B")
+elif marks > 50:
+    print("C")
+else:
+    print("Fail")
+
+print("-xxxxxx-")
+
+marks = 60
+if marks >= 40 and marks < 50:
+    print("D")
+elif marks >= 50 and marks < 60:
+    print("C")
+elif marks >= 60 and marks < 70:
+    print("B")
+elif marks >= 70 and marks < 80:
+    print("A")
+elif marks >= 80:
+    print("A+")
+else:
+    print("Fail")
+
+print("=====")
+
+requested_toppings = ['mushrooms', 'onions', 'pineapple']
+print('mushrooms' in requested_toppings)
+print('onions' in requested_toppings)
+print('Onions' in requested_toppings)
+if "mushrooms" in requested_toppings:
+    print("OK Sir")
+else:
+    print("Sorry")
