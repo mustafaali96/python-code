@@ -1,0 +1,24 @@
+print("Inherit")
+class Car():
+
+    def __init__(self,make,model,year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.__odometer_reading = 5
+
+    def get_descriptive_name(self):
+        long_name = str(self.year)+ ' '+self.make +' ' +self.model +' ' +str(self.__odometer_reading)
+        return long_name
+class Electriccar(Car):
+    def __init__(self,make,model,year):
+        super().__init__(make,model,year)
+    def charge(self):
+        print("Electrical car is charging")
+
+c = Car('audi','a8',2016)
+print(c.get_descriptive_name())
+ec = Electriccar('Tesla','S4',2014)
+print(ec.get_descriptive_name())
+ec.charge()
+print("c.charge don't work because inherit perform from parent to child not from child to parent")

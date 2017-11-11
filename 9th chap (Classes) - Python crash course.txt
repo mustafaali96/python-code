@@ -1,0 +1,60 @@
+class Dog():
+    def __init__(self, name, age):
+        print("Dog init")
+        print("Name", name)
+        print("Age", age)
+        self.name = name
+        self.age = age
+    def bark(self):
+        print(self.name +" is barking")
+
+d = Dog("Willie",6)
+print(".......")
+print(d.name)
+print(d.age)
+d.bark()
+
+myDog = Dog("lucy",13)
+myDog.bark()
+yourDog = Dog("Zeu",10)
+yourDog.bark()
+
+print("xxxxxxxxxxx")
+
+class Car():
+
+    def __init__(self,make,model,year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.__odometer_reading = 5
+
+    def get_descriptive_name(self):
+        long_name = str(self.year)+ ' '+self.make +' ' +self.model +' ' +str(self.__odometer_reading)
+        return long_name
+        
+c = Car('audi','a8',2016)
+print(c.get_descriptive_name())
+
+print("-----")
+
+print("Inherit")
+class Car():
+
+    def __init__(self,make,model,year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.__odometer_reading = 5
+
+    def get_descriptive_name(self):
+        long_name = str(self.year)+ ' '+self.make +' ' +self.model +' ' +str(self.__odometer_reading)
+        return long_name
+class Electriccar(Car):
+    def __init__(self,make,model,year):
+        super().__init__(make,model,year)
+
+c = Car('audi','a8',2016)
+print(c.get_descriptive_name())
+ec = Electriccar('Tesla','S4',2014)
+print(ec.get_descriptive_name())

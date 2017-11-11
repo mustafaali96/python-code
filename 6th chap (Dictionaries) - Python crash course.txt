@@ -1,0 +1,51 @@
+stu1 = {'name':'Mustafa',
+        'email':'abc@gmail.com',
+        'age':20,
+        23:"Hello",
+        True:"working",
+        4:True}
+print(stu1)
+print(stu1['name'])
+print(stu1['age'])
+print(stu1[23])
+print(stu1.items())
+for key, value in stu1.items():
+    print("\nKey: ", key)
+    print("Value: ", value)
+
+print("----")
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+     }
+print(sorted(favorite_languages))
+for name in sorted(favorite_languages.keys()):
+    print(name)
+for languages in sorted(favorite_languages.values()):
+    print(languages)
+
+print("----")
+
+stu2 = {'name':'Mustafa','email':'abc@gmail.com','age':20, 'languages': ['C#']}
+stu3 = {'name':'Ali','email':'abcd@gmail.com','age':22}
+stu4 = {'name':'Mir','email':'Mir@gmail.com','age':30}
+students = [stu2,stu3,stu4]
+print(students)
+for stu in students:
+    print(stu)
+    for key, val in stu.items():
+        print("key: ",key," --value: ",value)
+        print(stu)
+
+print("----")
+
+student = {"name":"Ali","age":20}
+print(student)
+student.clear()
+print(student)
+
+print("----")
+

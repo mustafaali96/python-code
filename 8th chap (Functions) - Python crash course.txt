@@ -1,0 +1,41 @@
+def greet_user():
+    print("Hello World")
+    print("Hello world 2")
+greet_user()
+
+print("------")
+
+def ali():
+    print("Make tea")
+    print("Add sugar 2 spoon")
+    print("Add 1 tea bag")
+    print("Fill cup")
+ali()
+
+print("------")
+
+def ali1(noofcups,sugar):
+    print("Make tea")
+    print("Preparing " +str(noofcups)+" cups of tea")
+    print("Adding sugar " +str(sugar)+" spoons")
+    print("Add 1 tea bag")
+    print("Fill cup")
+ali1(2,3)
+
+print("-----")
+
+def ali2(noofcups,sugar=2,elaichi=''):
+    print("Make tea")
+    print("Preparing " +str(noofcups)+" cups of tea")
+    print("Adding sugar " +str(sugar)+" spoons")
+    if(elaichi=='yes'):
+        print("Adding  elaichi")
+    print("Add 1 tea bag")
+    print("Fill cup")
+    return str(noofcups)+ " cup of tea"
+collectTea = ali2(3,elaichi="yes")
+print(collectTea)
+
+print("------")
+
+

@@ -1,0 +1,59 @@
+message = input("Tell me something")
+print(message)
+print("-----")
+name = input("Please enter your name: ")
+print("Hello, " + name + "!")
+print("xxxxx")
+age = input("How old are you? ")
+print(age)
+print("---")
+num = int( input("Enter your number"))
+if num % 2 == 0:
+    print("The number " +str(num)+ " is even")
+else:
+    print("\nThe number " + str(num) + " is odd.")
+print("----")
+current_number = 1
+while current_number <= 5:
+    print(current_number)
+    current_number += 1
+
+from random import randint
+num = randint(1,10)
+print(num)
+ 
+print("----")
+
+from random import randint
+num = 0
+mylist = []
+
+for val in range(0,10):
+    num = randint(1,30)
+    print(num)
+    val = num;
+    if val in mylist:
+
+        print("already exist")
+
+    else:
+        mylist.append(num)
+print(mylist)
+
+print("----")
+
+
+from random import randint
+num = randint(0,10)
+chance=1
+while chance <=3:
+    number = input("Enter number")
+    if num == number:
+        print("You Win")
+    else:
+        print("The answer is incorrect")
+    chance +=1
+print("You Loss")
+print(num)
+
+
